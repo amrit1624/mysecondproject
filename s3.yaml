@@ -1,1 +1,3 @@
 S3 files
+MyS3Bucket:
+    Type: AWS::S3::Bucket
