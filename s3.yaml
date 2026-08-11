@@ -1,3 +1,11 @@
-S3 files
-MyS3Bucket:
-    Type: AWS::S3::Bucket
+
+        Resources:
+          MyBucket:
+            Type: 'AWS::S3::Bucket'
+            Properties:
+              BucketName: my-bucket
+              OwnershipControls:
+                Rules:
+                - ObjectOwnership: BucketOwnerPreferred
+              AccessControl: AwsExecRead              
+      
